@@ -74,6 +74,7 @@ const three = (req, res) => {
 
 app.get('/chain(.html)?', [one, two, three]);
 
+
 app.all('*', (req, res) => {
     res.status(404);
     if (req.accepts('html')) {
